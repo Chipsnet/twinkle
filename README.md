@@ -44,3 +44,12 @@ mise run build
 ```
 mise run publish
 ```
+
+## トラブルシューティング
+
+### インストールした .NET SDK が見つからない
+
+十中八九PATHの問題なので、 `mise doctor` を実行してみてください。       
+「miseのPATHをdotnetのPATHより上にしてくれや」と言われたら、その通りにやってください。
+
+すでに.NETが入ってる場合はmiseを使わないか、あるいは全部miseに移行したほうがスムーズにいくと思います。
