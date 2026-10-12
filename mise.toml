@@ -1,0 +1,8 @@
+[tools]
+dotnet = "10"
+
+[tasks.build]
+run = "dotnet build"
+
+[tasks.publish]
+run = "dotnet publish -c Release -r win-x64 --self-contained -p:PublishSingleFile=true -p:EnableCompressionInSingleFile=true -o dist"
